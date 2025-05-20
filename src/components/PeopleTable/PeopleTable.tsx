@@ -5,7 +5,7 @@ import { Loader } from '../Loader';
 import { ErrorMessage } from '../../types/ErrorMessage';
 
 type Props = {
-  people: Person[] | null;
+  people: Person[];
   isLoading: boolean;
   errorMessage: ErrorMessage | null;
 };

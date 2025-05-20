@@ -21,11 +21,11 @@ export const App = () => {
     if (isPeople && people.length === 0) {
       setIsLoading(true);
       getPeople()
-        .then(respons => {
-          if (respons.length === 0) {
+        .then(response => {
+          if (response.length === 0) {
             setErrorMessage(ErrorMessage.NO_PEOPLE_ON_SERVER);
           } else {
-            setPeople(respons);
+            setPeople(response);
           }
         })
         .catch(() => setErrorMessage(ErrorMessage.OTHER_ERRORS))
